@@ -12,13 +12,13 @@ img{
     right: 0px;
     height: 250px;
 }
-li{
+table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
     font-size: 20px;
 }
-ul{
+table{
     margin-right: 220px;
 
 }

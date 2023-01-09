@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="css.css" type="text/css">
+    <style>
+        .selected{background-color: red; color: #fff;font-weight: bold}
+    </style>
 </head>
 <body>
     <h1>Grocery List</h1>
     <img src="shopLiftLogo.png">
-    <ul>
-        <li>
-            <a href="#" class="up">↑</a><br>
-            <a class="down" href="#">↓</a>
-            Item 1
-        </li>
-        <li>
-            <a href="#" class="up">↑</a><br>
-            <a class="down" href="#">↓</a>
-            Item 2
-        </li>
-    </ul>
+    <table id="table">
+        <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>hiihih</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>asdawr</td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="upNdown('up');">&ShortUpArrow;</button>
+    <button onclick="upNdown('down');">&ShortDownArrow;</button>
+
     <div id="root"></div>
     <script src="js.js"></script>
 
