@@ -7,7 +7,7 @@
     <title>Grocery List</title>
     <link rel="stylesheet" href="css.css" type="text/css">
     <style>
-        .selected{background-color: red; color: #fff;font-weight: bold}
+        .selected{background-color: tan; color: black;font-weight: bold}
     </style>
 </head>
 <body>
@@ -27,15 +27,18 @@
             <td></td>
         </tr>
     </table>
-    <button onclick="upNdown('up');">&ShortUpArrow;</button>
-    <button onclick="upNdown('down');">&ShortDownArrow;</button>
+    <button onclick="upNdown('up');" class="listBut">&ShortUpArrow;</button>
+    <button onclick="upNdown('down');" class="listBut">&ShortDownArrow;</button>
 
     <div id="root"></div>
     <script src="js.js"></script>
 
-    <h2>Add Item</h2>
+    <h2>Add to List</h2>
     <form>
-        <input type="text">
+        <label for="firstText">Item Name</label><br>
+        <input type="text" id="textAdd" name="firstText"><br>
+        <label for="secondText">Price</label><br>
+        <input type="text" id="textAdd" name="secondText">
         <button type="button" id="add">Add</button>
     </form>
     <p id="signedUp"></p>

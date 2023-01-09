@@ -3,8 +3,13 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
-    padding: 10px;
+    margin: 20px;
+    margin-left: 0px;
     font-size: 40px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 img{
     position: absolute;
@@ -20,8 +25,10 @@ table, th, td{
 }
 table{
     margin-right: 220px;
-
 }
-.up, .down{
-    font-size: 30px;
+button, label{
+    font-size: 20px;
+}
+#textAdd{
+    height: 35px;
 }
