@@ -10,31 +10,26 @@
 <body>
     <h1>Grocery List</h1>
     <img src="shopLiftLogo.png">
-    <table>
-        <tr>
-            <th>Order</th>
-            <th>Item Name</th>
-            <th>Guest Exit</th>
-            <th>Special Event</th>
-        </tr>
-        <tr>
-            <th>
-                <a class="up" href="#">↑</a><br>
-                <a class="down" href="#">↓</a>
-            </th>
-            <td>hiihih</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <a class="up" href="#">↑</a><br>
-                <a class="down" href="#">↓</a>
-            </th>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <ul>
+        <li>
+            <a href="#" class="up">↑</a><br>
+            <a class="down" href="#">↓</a>
+            Item 1
+        </li>
+        <li>
+            <a href="#" class="up">↑</a><br>
+            <a class="down" href="#">↓</a>
+            Item 2
+        </li>
+    </ul>
+    <div id="root"></div>
+    <script src="js.js"></script>
+
+    <h2>Add Item</h2>
+    <form>
+        <input type="text">
+        <button type="button" id="add">Add</button>
+    </form>
+    <p id="signedUp"></p>
 </body>
 </html>
