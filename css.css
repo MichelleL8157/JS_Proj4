@@ -11,11 +11,14 @@ h2{
     font-size: 30px;
     margin-bottom: 10px;
 }
+p{
+    font-size: 20px;
+}
 img{
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 250px;
+    height: 230px;
 }
 table, th, td{
     border: 1px solid black;
@@ -24,11 +27,22 @@ table, th, td{
     font-size: 20px;
 }
 table{
-    margin-right: 220px;
+    width: 75%;
+}
+.edit, .save, .delete, .add{
+    font-size: 20px;
 }
 button, label{
     font-size: 20px;
 }
 #textAdd{
     height: 35px;
+}
+.special{
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+ul{
+    margin-top: 0px;
+    font-size: 15px;
 }

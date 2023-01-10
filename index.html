@@ -13,34 +13,56 @@
 <body>
     <h1>Grocery List</h1>
     <img src="shopLiftLogo.png">
-    <table id="table">
+    <p>Click the item name then the up or down button to change its order.</p>
+    <div><table id="table">
         <tr>
             <th>Item Name</th>
             <th>Price</th>
+            <th>Options</th>
+        </tr>
+        <tr id="row1">
+            <td id="itemRow1">Milk</td>
+            <td id="priceRow1">5.00</td>
+            <td>
+                <input type="button" id="editBut1" class="edit" value="Edit" onclick="editRow('1')">
+                <input type="button" id="saveBut1" class="save" value="Save" onclick="saveRow('1')">
+                <input type="button" class="delete" value="Delete" onclick="deleteRow('1')">
+            </td>
+        </tr>
+        <tr id="row2">
+            <td id="itemRow2">Peppers</td>
+            <td id="priceRow2">3.10</td>
+            <td>
+                <input type="button" id="editBut2" class="edit" value="Edit" onclick="editRow('2')">
+                <input type="button" id="saveBut2" class="save" value="Save" onclick="saveRow('2')">
+                <input type="button" class="delete" value="Delete" onclick="deleteRow('2')">
+            </td>
+        </tr>
+        <tr id="row3">
+            <td id="itemRow3">Chicken Nuggets</td>
+            <td id="priceRow3">4.50</td>
+            <td>
+                <input type="button" id="editBut3" class="edit" value="Edit" onclick="editRow('3')">
+                <input type="button" id="saveBut3" class="save" value="Save" onclick="saveRow('3')">
+                <input type="button" class="delete" value="Delete" onclick="deleteRow('3')">
+            </td>
         </tr>
         <tr>
-            <td>hiihih</td>
-            <td></td>
+            <td><input type="text" id ="newItem"></td>
+            <td><input type="text" id ="newPrice"></td>
+            <td><input type="button" class="add" value="Add Row" onclick="addRow();"></td>
         </tr>
-        <tr>
-            <td>asdawr</td>
-            <td></td>
-        </tr>
-    </table>
-    <button onclick="upNdown('up');" class="listBut">&ShortUpArrow;</button>
-    <button onclick="upNdown('down');" class="listBut">&ShortDownArrow;</button>
-
+    </table></div>
+    <button onclick="change('up');" class="listBut">&ShortUpArrow;</button>
+    <button onclick="change('down');" class="listBut">&ShortDownArrow;</button>
+    <br>
+    <p class="special">There are some bugs to be implemented:</p>
+    <ul>
+        <li>the list can't be reordered after an item is deleted.</li>
+        <li>ordering the list after an item is added is buggy</li>
+    </ul>
+    <p class="special">Refresh the page if these issues are encountered...<br>The ordering only works before the list is changed.</p>
     <div id="root"></div>
     <script src="js.js"></script>
-
-    <h2>Add to List</h2>
-    <form>
-        <label for="firstText">Item Name</label><br>
-        <input type="text" id="textAdd" name="firstText"><br>
-        <label for="secondText">Price</label><br>
-        <input type="text" id="textAdd" name="secondText">
-        <button type="button" id="add">Add</button>
-    </form>
-    <p id="signedUp"></p>
 </body>
 </html>
