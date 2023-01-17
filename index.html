@@ -6,63 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="css.css" type="text/css">
+
     <style>
         .selected{background-color: tan; color: black;font-weight: bold}
     </style>
+
 </head>
 <body>
     <h1>Grocery List</h1>
-    <img src="shopLiftLogo.png">
-    <p>Click the item name then the up or down button to change its order.</p>
+    <img src="shopLiftLogo.png" id="img1">
+    <img src="basket.png" id="img2">
+    <img src="fallseas.png" id="img3">
+    <p>Record items and their prices onto the grocery list below. This table will help you 
+        organize all the necessary items to buy. There are several options to edit the table
+        such as deleting items, adding items, and rearranging the order of priority of certain
+        items.
+    </p>
     <div><table id="table">
         <tr>
             <th>Item Name</th>
             <th>Price</th>
-            <th>Options</th>
+            <th>Option</th>
         </tr>
         <tr id="row1">
-            <td id="itemRow1">Milk</td>
-            <td id="priceRow1">5.00</td>
-            <td>
-                <input type="button" id="editBut1" class="edit" value="Edit" onclick="editRow('1')">
-                <input type="button" id="saveBut1" class="save" value="Save" onclick="saveRow('1')">
-                <input type="button" class="delete" value="Delete" onclick="deleteRow('1')">
-            </td>
+            <td>Milk Carton</td>
+            <td>6.00</td>
+            <td><input type="button" value="Delete" onclick="deleteRow('1')"></td>
         </tr>
         <tr id="row2">
-            <td id="itemRow2">Peppers</td>
-            <td id="priceRow2">3.10</td>
-            <td>
-                <input type="button" id="editBut2" class="edit" value="Edit" onclick="editRow('2')">
-                <input type="button" id="saveBut2" class="save" value="Save" onclick="saveRow('2')">
-                <input type="button" class="delete" value="Delete" onclick="deleteRow('2')">
-            </td>
+            <td>Oreos</td>
+            <td>4.50</td>
+            <td><input type="button" value="Delete" onclick="deleteRow('2')"></td>
         </tr>
         <tr id="row3">
-            <td id="itemRow3">Chicken Nuggets</td>
-            <td id="priceRow3">4.50</td>
-            <td>
-                <input type="button" id="editBut3" class="edit" value="Edit" onclick="editRow('3')">
-                <input type="button" id="saveBut3" class="save" value="Save" onclick="saveRow('3')">
-                <input type="button" class="delete" value="Delete" onclick="deleteRow('3')">
-            </td>
+            <td>Whipped Cream</td>
+            <td>4.00</td>
+            <td><input type="button" value="Delete" onclick="deleteRow('3')"></td>
         </tr>
-        <tr>
-            <td><input type="text" id ="newItem"></td>
-            <td><input type="text" id ="newPrice"></td>
-            <td><input type="button" class="add" value="Add Row" onclick="addRow();"></td>
+        <tr id="row4">
+            <td>Cherios</td>
+            <td>2.50</td>
+            <td><input type="button" value="Delete" onclick="deleteRow('4')"></td>
         </tr>
     </table></div>
+    <h2>Add Item</h2>
+    <p>Enter the item name on the left text field and the item price on the right field. When
+        you're done, press the "Add to List" button.
+    </p>
+    <form>
+        <input type="text" id ="newItem">
+        <input type="text" id ="newPrice">
+        <input type="button" value="Add to List" onclick="addRow();">
+    </form>
+    <h2 id="special">Switch Priority</h2>
+    <p>If you want to change the order of the list, enter the number of the desired item according
+        to its position from the top then click the up or down arrows to change its order. Remember to 
+        change the number in the text field if you want to change the order of one item as its position
+        will change after every button or else it'll keep swapping with one other item.
+    </p>
+    <form>
+        <input type="text" id ="switchRow">
+    </form><br>
     <button onclick="change('up');" class="listBut">&ShortUpArrow;</button>
     <button onclick="change('down');" class="listBut">&ShortDownArrow;</button>
-    <br>
-    <p class="special">There are some bugs to be implemented:</p>
-    <ul>
-        <li>the list can't be reordered after an item is deleted.</li>
-        <li>ordering the list after an item is added is buggy</li>
-    </ul>
-    <p class="special">Refresh the page if these issues are encountered...<br>The ordering only works before the list is changed.</p>
-    <div id="root"></div>
     <script src="js.js"></script>
 </body>
 </html>

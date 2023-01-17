@@ -6,19 +6,31 @@ h1{
     margin: 20px;
     margin-left: 0px;
     font-size: 40px;
+    padding-right: 300px;
 }
 h2{
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 20px;
+    padding-right: 300px;
 }
 p{
     font-size: 20px;
+    padding-right: 300px;
 }
 img{
     position: absolute;
-    top: 0px;
     right: 0px;
-    height: 230px;
+    height: 300px;
+}
+#img1{
+    top: 0px;
+}
+#img2{
+    top: 300px;
+}
+#img3{
+    top: 600px;
 }
 table, th, td{
     border: 1px solid black;
@@ -27,22 +39,18 @@ table, th, td{
     font-size: 20px;
 }
 table{
-    width: 75%;
+    width: 60%;
+    padding-right: 300px;
 }
-.edit, .save, .delete, .add{
-    font-size: 20px;
+th{
+    background-color: tan;
 }
-button, label{
-    font-size: 20px;
-}
-#textAdd{
-    height: 35px;
-}
-.special{
+input{
     font-size: 15px;
-    margin-bottom: 0px;
+    height: 30px;
+    background-color: tan;
 }
-ul{
-    margin-top: 0px;
-    font-size: 15px;
+.listBut{
+    font-size: 25px;
+    background-color: tan;
 }
