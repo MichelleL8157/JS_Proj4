@@ -14,14 +14,13 @@
 </head>
 <body>
     <h1>Grocery List</h1>
-    <img src="shopLiftLogo.png" id="img1">
-    <img src="basket.png" id="img2">
-    <img src="fallseas.png" id="img3">
-    <p>Record items and their prices onto the grocery list below. This table will help you 
+    <img src="pics/shopLiftLogo.png" id="img1">
+    <p class="topP">Record items and their prices onto the grocery list below. This table will help you 
         organize all the necessary items to buy. There are several options to edit the table
         such as deleting items, adding items, and rearranging the order of priority of certain
         items.
     </p>
+    <p class="topP">Note: If an item is not being added to the list, that means it's already on the table.</p>
     <div><table id="table">
         <tr>
             <th>Item Name</th>
@@ -29,8 +28,8 @@
             <th>Option</th>
         </tr>
         <tr id="row1">
-            <td>Milk Carton</td>
-            <td>6.00</td>
+            <td>Orange Juice</td>
+            <td>5.50</td>
             <td><input type="button" value="Delete" onclick="deleteRow('1')"></td>
         </tr>
         <tr id="row2">
@@ -50,9 +49,18 @@
         </tr>
     </table></div>
     <h2>Add Item</h2>
-    <p>Enter the item name on the left text field and the item price on the right field. When 
-        you're done, press the "Add to List" button. If an item is not being added to the list, 
-        that means it's already on the table. 
+    <p>Click the images to add these default items into cart.</p>
+    <div class="itemList">
+        <img src="pics/bread.png" class="itemPics" id="bread">
+        <img src="pics/cheese.png" class="itemPics" id="cheese">
+        <img src="pics/milk.png" class="itemPics" id="milk">
+        <img src="pics/greens.png" class="itemPics" id="greens">
+        <img src="pics/fruits.png" class="itemPics" id="fruits">
+        <img src="pics/thanksBundle.png" class="itemPics" id="thanksBundle">
+    </div>
+    <p>If your desired item is not on the default list above, enter the item name on the left 
+        text field and the item price on the right field. When you're done, press the "Add to 
+        List" button. 
     </p>
     <form>
         <input type="text" id ="newItem">
